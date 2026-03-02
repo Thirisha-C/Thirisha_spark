@@ -16,6 +16,8 @@ function area(l,b)
 
 area(3,4);
 
+//return value
+
 function multiply(a, b) 
 {
     return a*b;
@@ -42,10 +44,12 @@ function oddEven(a)
 }
 console.log(oddEven(25));
 
-//ARROW FUNCTION
+//assign a function to the variable
 
-function add(a,b)
+let calcArea = function (width, height)
 {
-    return a+b;
+    let result = width * height;
+    return result;
 }
-let sub=(a,b) => a-b;
+var result = calcArea(12,18)
+console.log(result);
